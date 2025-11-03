@@ -109,6 +109,9 @@ const STOPWORDS = new Set([
         return 'neutral';
       }
       
-      export { summarize, classifyText, sentimentAnalysis };
-
+      module.exports = {
+        summarize,
+        classifyText,
+        sentimentAnalysis
+      };
     
