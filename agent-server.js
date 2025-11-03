@@ -62,6 +62,20 @@ app.post('/a2a', (req, res) => {
 
 // start server
 const PORT = process.env.PORT || 3333;
+
+app.get('/a2a', (req, res) => {
+  res.send(`
+    <html>
+      <head><title>Nova Agent A2A Endpoint</title></head>
+      <body style="font-family:Arial; text-align:center; margin-top:100px;">
+        <h1>✅ Nova Agent is Live</h1>
+        <p>Welcome to the Nova A2A endpoint.</p>
+        <p>Use <code>POST /a2a</code> for JSON-RPC requests.</p>
+      </body>
+    </html>
+  `);
+});
+
 app.listen(PORT, () => {
   console.log(`✅ A2A Knowledge Agent running at http://localhost:${PORT}/a2a`);
   console.log('Available methods: summarize_text, classify_text, sentiment_analysis');
