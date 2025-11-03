@@ -1,0 +1,25 @@
+{
+    "name": "a2a-knowledge-agent",
+    "version": "1.1.0",
+  
+    "description": "JSON-RPC (Mastra A2A style) knowledge workflow agent: summarizer, classifier, sentiment analyzer (zero-auth).",
+    "main": "node agent-server.js",
+    "scripts": {
+        "start": "node agent-server.js"
+    },
+    "keywords": [
+        "a2a",
+        "json-rpc",
+        "agent",
+        "summarizer",
+        "classifier",
+        "sentiment"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "mastra": "^0.17.7"
+    }
+}

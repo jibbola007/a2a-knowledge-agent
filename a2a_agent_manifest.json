@@ -1,0 +1,24 @@
+{
+    "name": "Lexi",
+    "version": "1.0.0",
+    "protocol": "A2A",
+   "endpoint": "https://glisky-retrouss-karri.ngrok-free.dev/a2a",
+ "methods": {
+      "summarize_text": {
+        "description": "Summarizes any long text into concise key sentences.",
+        "params": { "text": "string", "max_sentences": "integer" },
+        "returns": "string"
+      },
+      "classify_text": {
+        "description": "Classifies text into categories like technology, finance, health, etc.",
+        "params": { "text": "string" },
+        "returns": "string"
+      },
+      "sentiment_analysis": {
+        "description": "Detects the sentiment of text as positive, neutral, or negative.",
+        "params": { "text": "string" },
+        "returns": "string"
+      }
+    }
+  }
+  

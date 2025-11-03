@@ -1,0 +1,28 @@
+{
+    "name": "KnowledgeAgentWorkflow",
+    "triggers": [
+      {
+        "type": "webhook",
+        "name": "IncomingText",
+        "endpoint": "/incoming"
+      }
+    ],
+    "actions": [
+      {
+        "type": "a2a_call",
+        "name": "SummarizeText",
+        "agent": "KnowledgeWorkflowAgent",
+        "method": "summarize_text",
+        "params": {
+          "text": "{{ trigger.payload.text }}",
+          "max_sentences": 2
+        }
+      },
+      {
+        "type": "log",
+        "name": "LogSummary",
+        "message": "Summary Result: {{ actions.SummarizeText.result }}"
+      }
+    ]
+  }
+  

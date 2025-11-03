@@ -1,0 +1,10 @@
+{
+    "jsonrpc": "2.0",
+    "method": "summarize_text",
+    "params": {
+      "text": "Building Intelligent Workflows: Integrating Mastra A2A Protocol with Telex. In the rapidly evolving landscape of AI agents and workflow automation, interoperability between different AI systems has become crucial. This is where the Agent-to-Agent (A2A) protocol comes in, and today I will walk you through how we integrated Mastra's A2A implementation with Telex, our organization's workflow automation platform. What is Mastra A2A? Mastra's Agent-to-Agent (A2A) protocol is a standardized communication layer that allows AI agents to interact seamlessly across different platforms. Built on the JSON-RPC 2.0 specification, it provides a robust framework for agent discovery, task execution, and message exchange.",
+      "max_sentences": 2
+    },
+    "id": 1
+  }
+  
